@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2xh-6P-enm">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="10"/>
+                    <color key="backgroundColor" red="0.91764705882352937" green="0.91764705882352937" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="10" id="FXQ-T8-bhd"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_header_phone" translatesAutoresizingMaskIntoConstraints="NO" id="VK0-lf-xNQ">
+                    <rect key="frame" x="0.0" y="21" width="18" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="18" id="m5d-Rg-rFW"/>
+                        <constraint firstAttribute="width" constant="18" id="pNh-dY-h6r"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="颜值" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FZi-l1-tr4">
+                    <rect key="frame" x="23" y="20" width="25" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TgY-9N-KfT">
+                    <rect key="frame" x="250" y="12" width="60" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="qCG-kn-iD3"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="更多 &gt;">
+                        <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="FZi-l1-tr4" firstAttribute="centerY" secondItem="VK0-lf-xNQ" secondAttribute="centerY" id="6CC-Yw-KDn"/>
+                <constraint firstItem="TgY-9N-KfT" firstAttribute="baseline" secondItem="FZi-l1-tr4" secondAttribute="firstBaseline" id="7RN-XX-D9o"/>
+                <constraint firstItem="TgY-9N-KfT" firstAttribute="bottom" secondItem="U6b-Vx-4bR" secondAttribute="bottomMargin" id="GNE-w7-nEp"/>
+                <constraint firstItem="FZi-l1-tr4" firstAttribute="leading" secondItem="VK0-lf-xNQ" secondAttribute="trailing" constant="5" id="IJb-jD-F16"/>
+                <constraint firstItem="VK0-lf-xNQ" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="PU8-tI-QaC"/>
+                <constraint firstAttribute="trailing" secondItem="2xh-6P-enm" secondAttribute="trailing" id="Ue7-Cy-kWT"/>
+                <constraint firstItem="VK0-lf-xNQ" firstAttribute="top" secondItem="2xh-6P-enm" secondAttribute="bottom" constant="11" id="l9P-nb-FFM"/>
+                <constraint firstItem="FZi-l1-tr4" firstAttribute="centerY" secondItem="VK0-lf-xNQ" secondAttribute="centerY" id="mHC-4d-L0Y"/>
+                <constraint firstItem="TgY-9N-KfT" firstAttribute="firstBaseline" secondItem="FZi-l1-tr4" secondAttribute="firstBaseline" id="nQH-E4-tKk"/>
+                <constraint firstAttribute="trailing" secondItem="TgY-9N-KfT" secondAttribute="trailing" constant="10" id="oFX-Xu-1NO"/>
+                <constraint firstItem="2xh-6P-enm" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="sQT-U6-DKJ"/>
+                <constraint firstItem="2xh-6P-enm" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="u8P-Qh-50z"/>
+                <constraint firstItem="FZi-l1-tr4" firstAttribute="top" secondItem="2xh-6P-enm" secondAttribute="bottom" constant="10" id="uGB-R1-bJG"/>
+            </constraints>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <image name="home_header_phone" width="18" height="18"/>
+    </resources>
+</document>
